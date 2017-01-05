@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1 id="swipe">Swipe</h1>
+
+<p>&#8216;Swipe&#8217; allows you to easily attach swipe events to a div id. Change the options to adjust the threshold and apply functions to directional swipes.</p>
+
+<h5 id="createoptionsforyourswipeclass">Create options for your Swipe Class</h5>
+
+<pre><code class="javascript">var options = {
+    id:'swipeMe1',
+    threshold:20,
+    swipeUpFunction: null,
+    swipeDownFunction: null,
+    swipeLeftFunction: onSwipeLeft,
+    swipeRightFunction: onSwipeRight,
+    noSwipeFunction:onSwipeTap
+};
+</code></pre>
+
+<h5 id="createanewswipeinstancewhilepassingyouroptions">Create a new Swipe instance while passing your options</h5>
+
+<pre><code class="javascript">var mySwipe = new Swipe(options);
+</code></pre>
+
+<h5 id="initializeinstance:">Initialize instance:</h5>
+
+<pre><code class="javascript">mySwipe.init();
+</code></pre>
+
+<h5 id="changeentireoptionsobject:">Change entire options object:</h5>
+
+<pre><code class="javascript">mySwipe.options = newOptions;
+</code></pre>
+
+<h5 id="changeanindividualoption:">Change an individual option:</h5>
+
+<pre><code class="javascript">mySwipe.options.threshold = 40;
+</code></pre>
+
+<h5 id="removereference:">Remove reference:</h5>
+
+<pre><code class="javascript">mySwipe.remove();
+</code></pre>
+
+</body>
+</html>
